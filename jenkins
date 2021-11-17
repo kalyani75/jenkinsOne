@@ -17,5 +17,10 @@ pipeline {
                 echo 'deploying'
             }
         }
+                stage('writeFile') {
+            steps {
+                echo 'writing the file'
+            }
+        }
     }
 }
